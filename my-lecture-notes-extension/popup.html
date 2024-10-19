@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecture Transcriber</title>
+    <style>
+        body {
+            width: 180px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 16px;
+            margin-top: 0;
+        }
+        button {
+            width: 100%;
+            margin-top: 8px;
+            padding: 5px;
+            font-size: 12px;
+        }
+        #status-container {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+        }
+        #status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        #status {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lecture Transcriber</h2>
+    <button id="startRecording">Start Recording</button>
+    <button id="stopRecording" disabled>Stop Recording</button>
+    <div id="status-container">
+        <div id="status-indicator"></div>
+        <div id="status">Not recording</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
